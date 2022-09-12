@@ -1,2 +1,3 @@
 # Python
-Python scripts
+Python tutorial with Python scripts
+
