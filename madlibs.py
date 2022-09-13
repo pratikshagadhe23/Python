@@ -10,4 +10,4 @@ print("Violets are " + color)
 print("I love " + celebrity)
 print("My name is "+ name) 
 print("Lucky" + number)
-print("How are you?")
+
