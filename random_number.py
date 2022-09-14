@@ -12,14 +12,14 @@ def game():
         user_number= int(input("Enter a number : "))
         if user_number < random_number:
             print("\n" + user_name + " My number is greater than your number. Try again")
-            print("You've " + str(6-i) + "chances left.")
+            print("You've " + str(6-i) + " chances left.")
             i=i+1
         elif user_number > random_number:
             print("\n" + user_name + " My number is smaller than your number. Try again")
-            print("You've " + str(6-i) + "chances left.")
+            print("You've " + str(6-i) + " chances left.")
             i=i+1
         elif user_number == random_number:
-            print("\nCongratulations!" + user_name + "You guessed the correct number.")
+            print("\nCongratulations!" + user_name + " You guessed the correct number.")
             r=0
             break
     if r==1:
