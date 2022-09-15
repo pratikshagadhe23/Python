@@ -1,3 +1,4 @@
+#You get 6 chances to guess the number that computer has randomly selected from 1 to 100.
 import random
 user_name = input("Enter your name: ")
 print("\nWelcome to the guessing game "+ user_name)
