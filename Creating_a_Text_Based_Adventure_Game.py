@@ -1,5 +1,4 @@
-if __name__ == "_main_":
-    while True:
+def main():
         print("Welcome to the Adventure Game!")
         print("As an avid traveler, you have decided to visit the Catacombs of Paris.")
         print("However, during your exploration , you find yourself lost.")
@@ -7,8 +6,8 @@ if __name__ == "_main_":
         print("Let's start with your name. ")
         name= input()
         print("Good luck, " + name+ ".")
-
-
+        introscene()   
+            
 def introscene():
     directions= ["left","right","forward","backward"]
     print("You are at a crosswords, and you can choose to go down any of the four hallways. Where would you like to go?")
@@ -77,6 +76,7 @@ def HauntedRoom():
         else:
             print("Please enter a valid option.")
 
+main()
 
 
 
