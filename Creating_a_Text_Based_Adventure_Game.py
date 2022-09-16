@@ -76,7 +76,45 @@ def HauntedRoom():
         else:
             print("Please enter a valid option.")
 
+weapon =False
+
+def ShowSkeletons():
+    directions = ["backward","forward"]
+    global weapon
+    print("You see a wall of skeletons as you walk into the room.Someone is watching you.Where would you like to go?")
+    user_input= ""
+    while user_input not in directions:
+        print("Options: left/backward/forward")
+        user_input= input()
+        if user_input == "left":
+            print("You find that this door opens into a wall.You open some of the drywall to discover a knife.")
+            weapon = True
+        elif user_input == "backward":
+            introscene()
+        elif user_input == "forward":
+            StrangeCreature()
+        else:
+            print("Please enter a valid option.")
+
+def StrangeCreature():
+    actions = ["right","flee"]
+    global weapon
+    print("A strange creature has appeared. You can either run or fight it.What would you like to go?")
+    user_input= ""
+    while user_input not in actions:
+        print("Options: flee/fight")
+        user_input= input()
+        if user_input == "fight":
+            if weapon:
+                print("You kill the creature with the knife you found earlier. After moving forward, you find one of the exits.Congrats!")
+            else:
+                print("The craeture has killed you.")
+            quit()
+        elif user_input == "flee":
+            ShowSkeletons()
+        else:
+            print("Please enter a valid option.")
+
+
 main()
-
-
 
