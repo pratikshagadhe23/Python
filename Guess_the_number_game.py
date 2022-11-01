@@ -11,4 +11,4 @@ while guess!=number:
         print("Guess a higher number. Try again")
         guess = int(input("\nGuess a number between 1 and 50 : "))
         
-print("Congratulations! You guessed the right number.")
+print("Congratulations, You won! You guessed the right number.")
